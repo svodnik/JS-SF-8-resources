@@ -7,9 +7,23 @@
 <a name="tools"></a>
 # 1. Installing command line tools
 
-You will need to install certain tools that will be used throughout the course. The installation instructions vary depending on whether you have a Mac, Windows, or Linux machine.
+You will need to install certain tools that will be used throughout the course. 
 
-1. __Install brew__
+1. __Install Visual Studio Code__
+
+  Visual Studio Code can be found [here](http://code.visualstudio.com) and is available for all platforms, but you are free to use any code editor you choose. Popular choices include [Atom](http://atom.io) and [Sublime Text](https://sublimetext.com/3).
+
+2. __Configure Visual Studio Code__
+
+  Start Visual Studio Code (`Applications > Visual Studio Code`).
+
+  Press `shift` + `command` + `P` to open the Command Palette.
+
+  Type `shell command`, then in the displayed list, click __Shell Command: Install 'code' command in PATH__.
+
+  Close Visual Studio Code.
+
+3. __Install brew__
 
   Brew is a package manager that we use to install various command line applications to your computer.
 
@@ -19,7 +33,7 @@ You will need to install certain tools that will be used throughout the course. 
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   ```
 
-2. __Install Git__
+4. __Install Git__
 
   Git is used to track the state of your code over time. [GitHub](https://github.com) has built its platform on Git technology. We will be using both Git and GitHub to distribute code, submit assignments, and offer feedback. Use the following command to install Git:
 
@@ -27,30 +41,42 @@ You will need to install certain tools that will be used throughout the course. 
   brew install git
   ```
 
-3. __Configure Git__
+5. __Configure Git__
 
-  Copy and paste the following two commands (separately) into your terminal. Replace the name and email address values with your own.
+  Copy and paste the following three commands (separately) into your terminal. Replace the name and email address values with your own.
 
   ```bash
-  git config --global user.name "Steve Jobs"
-  git config --global user.email "steve@apple.com"
+  git config --global user.name "YOUR NAME"
+  git config --global user.email "YOUR EMAIL ADDRESS"
+  git config --global core.editor "code -w"
+  ```
+  (source: [GitHub](https://help.github.com/articles/set-up-git/))
+
+  Note that the third command applies only if you're using Visual Studio Code.
+
+  If you're using Sublime, type the following instead: 	
+  
+  ```bash
+  git config --global core.editor "subl -n -w"
+  ```
+	
+  If you're using Atom, type the following instead: 
+  
+  ```bash
+  git config --global core.editor "atom -w"
   ```
 
-4. __Install Node__
+6. __Install Node__
 
   Refer to the package installer on Node’s [website](https://nodejs.org/en/). Select the Current version (labeled "Latest Features"). Then just follow the set-up instructions.
 
-5. __Ensure NPM is updated__
+7. __Ensure NPM is updated__
 
   Node has a handy package manager, which we will using frequently. It comes with Node, but NPM is updated more frequently; you will always need to have the most up-to-date version.
 
   ```bash
   npm install npm -g
   ```
-
-6. __Install Visual Studio Code__
-
-  Visual Studio Code can be found [here](http://code.visualstudio.com) and is available for all platforms, but you are free to use any code editor you choose. Popular choices include [Atom](http://atom.io) and [Sublime Text](https://sublimetext.com/3).
 
   When you’re done, raise your hand and ask a member of the instructional team to verify that the installation was successful.
   Then complete the instructions in the section *2. Setting up GitHub* below.
@@ -62,15 +88,6 @@ We will be using the GitHub service to share some of our code. We will learn
 about the underlying technology of GitHub known as `git` in the next lesson.
 
 - Create an account at http://github.com
-- In a Terminal on your computer, run the following two commands:
-
-```bash
-git config --global user.name "YOUR NAME"
-git config --global user.email "YOUR EMAIL ADDRESS"
-```
-
-  (source: [GitHub](https://help.github.com/articles/set-up-git/))
-
 - Follow [these
   instructions](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
   to create a new _SSH Key_ (a special, very secure, key which allows your
