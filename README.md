@@ -9,6 +9,7 @@
 ## Useful links
 
 - [JSD8 class website](https://svodnik.github.io/jsd8)
+- [JSD8 homework repository](https://github.com/Borgaard/jsd8-homework)
 - [Exit ticket](https://bitly.com/JSD8exit)
 - [Snack signup](https://jsdsnacks.youcanbook.me)
 
@@ -17,8 +18,8 @@
 ## Office Hours
 
 - Monday & Wednesday, 5:30pm - 6:30pm
-- Larissa will be in our classroom (#3) unless Front Lines is in the process of setting it up. If you don't see her, message her on Slack to find out where she is.
-- Other office hours available by appointment with Larissa or Sasha.
+- Find Nicole in our classroom (#8) or in the workspace/lounge behind the classroom. If you don't see her, message her on Slack to find out where she is.
+- Other office hours available by appointment with Nicole or Sasha.
 
 ---
 
