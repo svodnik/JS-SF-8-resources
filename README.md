@@ -9,7 +9,7 @@
 ## Useful links
 
 - [JSD8 class website](https://svodnik.github.io/jsd8)
-- [JSD8 homework repository](https://github.com/Borgaard/jsd8-homework)
+- [JSD8 homework repository](https://github.com/Borgaard/JS-SF-8-homework)
 - [Exit ticket](https://bitly.com/JSD8exit)
 - [Snack signup](https://jsdsnacks.youcanbook.me)
 
