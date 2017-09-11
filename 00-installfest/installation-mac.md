@@ -9,19 +9,33 @@
 
 You will need to install certain tools that will be used throughout the course. 
 
-1. __Install Visual Studio Code__
+1. __Install a text editor__
 
   Visual Studio Code can be found [here](http://code.visualstudio.com) and is available for all platforms, but you are free to use any code editor you choose. Popular choices include [Atom](http://atom.io) and [Sublime Text](https://sublimetext.com/3).
 
-2. __Configure Visual Studio Code__
+2. __Configure your text editor__
 
-  Start Visual Studio Code (`Applications > Visual Studio Code`).
+    a. __Visual Studio Code__
 
-  Press `shift` + `command` + `P` to open the Command Palette.
+    Start Visual Studio Code (`Applications > Visual Studio Code`).
 
-  Type `shell command`, then in the displayed list, click __Shell Command: Install 'code' command in PATH__.
+    Press `shift` + `command` + `P` to open the Command Palette.
 
-  Close Visual Studio Code.
+    Type `shell command`, then in the displayed list, click __Shell Command: Install 'code' command in PATH__.
+
+    Close Visual Studio Code.
+
+    b. __Sublime Text 3__
+
+      Open your terminal (`Applications > Utilities > Terminal`), paste the following command, and hit enter:
+
+    ```bash
+    ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+    ```
+
+    c. __Atom__
+
+      No configuration needed.
 
 3. __Install brew__
 
