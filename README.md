@@ -19,7 +19,7 @@
 
 - Monday & Wednesday, 5:30pm - 6:30pm
 - Find Nicole in our classroom (#8) or in the workspace/lounge behind the classroom. If you don't see her, message her on Slack to find out where she is.
-- Other office hours available by appointment with Nicole or Sasha.
+- Other office hours available by appointment with Nicole, Dante, or Sasha.
 
 ---
 
@@ -39,16 +39,11 @@ To use:
 
 ### Resources provided in the folder for each class:
 <dl>
-  <dt><code>README.md</code></dt>
-  <dd>Homework assignments, prereading for the next class, and additional resources on the topics covered</dd>
   <dt><code>starter-code</code> folder</dt>
   <dd>Starting files for codealongs and labs we do in class, as well as for homework assignments</dd>
   <dt><code>solution-code</code> folder</dt>
   <dd>Solution files for codealongs we do together in class</dd>
-  <dt><code>JS-SF-8-##-[topic].pdf</code></dt>
-  <dd>Slide deck used in class, where <code>##</code> is the class number and <code>[name]</code> describes the topics covered<br>(note that the PDF for each class will be posted just before that class)</dd>
-  <dt>Other <code>.md</code> files</dt>
-  <dd>Instructions, lists of commands, or other resources relevant to the topics covered</dd>
+
 </dl>
 
 ---
