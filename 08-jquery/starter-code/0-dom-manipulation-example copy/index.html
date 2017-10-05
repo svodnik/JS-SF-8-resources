@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sunshine Day</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,600,700" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header id="home" class="header">
+  <nav class="nav" role="navigation">
+    <div class="container nav-elements">
+
+      <div class="branding">
+        <a href="#home"><img src="images/logo.png" alt="Logo - Sunshine Day"></a>
+      </div><!-- branding -->
+      <ul class="navbar">
+        <li><a href="#home">home</a></li>
+        <li><a href="#history">history</a></li>
+        <li><a href="#products">products</a></li>
+        <li><a href="#guarantee">guarantee</a></li>
+        <li><a href="#people">people</a></li>
+      </ul><!-- navbar -->
+      <div class="forecast">
+        <div class="prefs">
+          <form>
+            <h3>Activity Forecast</h3>
+            <div>
+              <label for="location" class="hidden">Location</label>
+              <input id="location" placeholder="Enter location">
+            </div>
+            <div class="button">
+              <input type="submit" value="Get Forecast" class="forecast-button">
+            </div>
+            <div class="conditions"></div>
+          </form>  
+        </div><!-- prefs -->
+        <div class="results">
+          <h3>Activities</h3>
+          <div class="options">
+            <div id="solo">Solo</div>
+            <div id="team">Team</div>
+            <div id="all" class="selected">All</div>
+          </div><!-- options -->
+          <div class="activities"></div> 
+        </div><!-- results -->
+      </div><!-- forecast -->
+    </div><!-- container nav-elements -->
+  </nav>
+  <div class="container tagline">
+    <h1 class="headline">Our Mission</h1>
+    <p>Get your day started <em>right</em> with <em>healthy eating</em> options and a look ahead at your <em>weather</em> and <em>schedule</em>.</p>
+  </div><!-- container tagline -->
+</header><!-- #home -->
+
+<script src="js/script.js"></script>
+</body>
+</html>

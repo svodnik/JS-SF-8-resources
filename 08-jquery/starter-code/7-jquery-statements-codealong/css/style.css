@@ -1,0 +1,14 @@
+.fun {
+	text-decoration: underline;
+	color: purple;
+	font-size: 40px;
+}
+
+.special {
+	color: red;
+	font-size: 50px;
+}
+
+/*h1 {
+	display: none;
+}*/
