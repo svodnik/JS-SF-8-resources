@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sessions {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.session {
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #D8ECF2;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 400px;
+}
+.session p {
+  margin: 0.2em;
+}
+.session .title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.session .label {
+  font-weight: bold;
+}
