@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>All About React</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="menu">
+      <!-- This element's contents will be replaced with our Menu component. -->
+    </div>
+
+    <article>
+      <div id="heading">
+        <!-- This element's contents will be replaced with our Heading component. -->
+      </div>
+      <div id="text">
+        <!-- This element's contents will be replaced with our Text component. -->
+      </div>
+    </article>
+
+    <div id="footer">
+        <!-- This element's contents will be replaced with our Footer component. -->
+    </div>
+
+    <script type="text/babel">
+      // state represents the data we want to display
+      // normally, state is a combination of data returned from an HTTP request and user input
+      var state = {
+        title: 'All About React',
+        menu: ['Home', 'Components', 'JSX'],
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum mi in nisl imperdiet, nec sagittis ipsum pulvinar. Suspendisse dapibus dictum nisi, ut malesuada nisi fermentum eget. Cras porttitor, sapien nec tempor lacinia, quam dolor hendrerit nunc, at rhoncus turpis quam non risus. Mauris euismod porta nulla non tincidunt. Vivamus eget purus a magna iaculis imperdiet. Morbi maximus tortor sit amet fringilla lobortis. Fusce nec magna ligula. Mauris massa risus, imperdiet nec mattis eget, porttitor at augue. Integer quis dignissim nisi. Etiam finibus, metus vitae molestie sodales, sem tortor luctus justo, sit amet efficitur sem erat eget tellus. Phasellus cursus et lorem eget venenatis. Vivamus id turpis eu nunc suscipit congue nec faucibus sapien. Duis tristique dolor turpis, vitae condimentum mauris tempus vel. Aliquam urna urna, ornare eu purus laoreet, feugiat accumsan nunc.',
+        footer: ['Terms of use', 'Support', 'Contact', 'Copyright']
+      }
+
+      // references to the elements that will display the results of our React components
+      const menuTarget = document.querySelector('#menu');
+      const headingTarget = document.querySelector('#heading');
+// STEP 1
+// Create a variable containing a reference to the element where the text will be rendered,
+// and create another variable containing a reference to the element where the footer will be rendered.
+
+
+
+      // the render() method specifies the component, data, and where in the DOM it should be rendered
+      ReactDOM.render(<Menu {...state} />, menuTarget);
+      ReactDOM.render(<Heading {...state} />, headingTarget);
+// STEP 3
+// Call the render method for the component that renders the main text, and then call the 
+// render method for the component that renders the footer.
+
+
+
+      // component for the menu at the top of the page
+      function Menu(props) {
+        return (
+          <nav>
+            <ul>
+              {props.menu.map(function(item, index) {
+                return <li key={index}>{item}</li>
+              })}
+            </ul>
+          </nav>
+        )
+      }
+
+      // component for the page heading
+      function Heading(props) {
+        return (
+          <nav>
+            <h1>{props.title}</h1>
+          </nav>
+        )
+      }
+
+// STEP 2
+// Part A
+// Create a component that renders the contents of state.text within a p element.
+
+
+
+
+// Part B
+// Create a component that iterates through the elements of the state.footer property. It should
+// render each element within an li element, group all li elements within a ul element, and enclose
+// the ul element within a nav element. 
+
+
+
+
+    </script>
+  </body>
+</html>

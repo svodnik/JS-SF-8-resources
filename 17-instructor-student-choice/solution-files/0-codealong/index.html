@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>All About React</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="menu">
+      <!-- This element's contents will be replaced with our Menu component. -->
+    </div>
+
+      <div id="heading">
+        <!-- This element's contents will be replaced with our Heading component. -->
+      </div>
+
+    <script type="text/babel">
+      // state represents the data we want to display
+      // normally, state is a combination of data returned from an HTTP request and user input
+      var state = {
+        title: 'All About React',
+        menu: ['Home', 'Components', 'JSX'],
+      }
+
+      // references to the elements that will display the results of our React components
+      const menuTarget = document.querySelector('#menu');
+      const headingTarget = document.querySelector('#heading');
+
+      // the render() method specifies the component, data, and where in the DOM it should be rendered
+      ReactDOM.render(<Menu {...state} />, menuTarget);
+      ReactDOM.render(<Heading {...state} />, headingTarget);
+
+      // component for the menu at the top of the page
+      function Menu(props) {
+        return (
+          <nav>
+            <ul>
+              {props.menu.map(function(item, index) {
+                return <li key={index}>{item}</li>
+              })}
+            </ul>
+          </nav>
+        )
+      }
+
+      // component for the page heading
+      function Heading(props) {
+        return (
+          <nav>
+            <h1>{props.title}</h1>
+          </nav>
+        )
+      }
+    </script>
+  </body>
+</html>
